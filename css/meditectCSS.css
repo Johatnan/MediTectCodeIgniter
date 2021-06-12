@@ -1,0 +1,225 @@
+body {
+	background-image: url("https://a0.muscache.com/pictures/416599b4-6d74-40a0-b046-6a65c71d4369.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}
+.navbar {		
+	background-color: #3184E4!important;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-bottom: 1px solid #3184E4;
+	box-shadow: 0 0 4px rgba(1, 36, 77, 0.1);
+}
+
+.navbar .navbar-brand {
+	color: rgb(255, 255, 255);
+	padding-left: 0;
+	padding-right: 50px;
+	font-family: 'Merienda One', sans-serif;
+}
+.navbar .navbar-brand i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.search-box {
+	position: relative;
+}	
+.search-box input {
+	box-shadow: none;
+	padding-right: 35px;
+	border-radius: 3px !important;
+}
+.search-box .input-group-addon {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #bbc9eb;
+	font-size: 19px;
+}
+
+.navbar .nav-item i {
+
+	font-size: 18px;
+}
+
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.open > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+}
+.navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:active {
+	color: rgb(255, 255, 255);
+   background: #689fc4;
+}	
+.navbar .dropdown-item .material-icons {
+	font-size: 21px;
+	line-height: 16px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+
+	background: transparent !important;
+}
+
+@media (min-width: 1200px){
+	.form-inline .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 1199px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+.circle{
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    position: absolute;
+    border-color: #3184E4;
+    border-width: 10px;
+    border-style: solid;
+    z-index: 1;
+    margin-top: -50px;
+}
+#logo{
+    position: absolute;
+    z-index: 1;
+    margin-left: -50px;
+}
+.sign-up{
+    margin-left: 60%;
+    margin-top: 5%;
+    width: 35%;
+    height: 700px;
+    background-color: #0000008f;
+    color: rgb(255, 255, 255);
+	position: absolute;
+}
+.text{
+	font-family: 'Merienda One', sans-serif;
+}
+.content{
+	margin-top: 12%;
+	color: rgb(255, 255, 255);
+	margin-left: 5%;
+}
+@media (max-width: 1690px){
+	.circle {
+		width: 300px;
+		height: 300px;
+	}
+	#logo-pic{
+		margin-left: 10px;
+		width: 375px;
+	}
+}
+@media (max-width: 1420px){
+	.circle {
+		width: 250px;
+		height: 250px;
+	}
+	#logo-pic{
+		margin-left: 20px;
+		width: 300px;
+	}
+}
+@media (max-width: 1200px){
+	.circle {
+		display: none;
+	}
+	#logo-pic{
+		margin-left: 50%;
+		width: 160px;
+	}
+	.content{
+		display: none;
+	}
+	.sign-up{
+		margin-left: 5%;
+		width: 90%;
+	}
+}
+@media (max-width: 900px){
+	#logo-pic{
+		margin-top: 10%;
+		margin-left: 65%;
+		width: 130px;
+	}
+}
+@media (max-width: 700px){
+	#logo-pic{
+		margin-top: 15%;
+		margin-left: 80%;
+		width: 100px;
+	}
+}
+@media (max-width: 600px){
+	#logo-pic{
+		display: none;
+	}
+}
+.custom-container{
+	background-color: #0000008f;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+
+.carousel-cell {
+  width: 50%;
+  height: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+
+
