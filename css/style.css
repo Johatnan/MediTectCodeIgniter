@@ -1,0 +1,437 @@
+.form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}
+.navbar {		
+	background-color: #3184e4 !important;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #61759e;
+	box-shadow: 0 0 4px rgba(1, 36, 77, 0.1);
+}
+
+.navbar .navbar-brand {
+	color: rgb(255, 255, 255);
+	padding-right: 20px;
+	font-family: 'Merienda One', sans-serif;
+}
+
+.navbar-brand {
+	padding-top: 8px !important;
+	padding-bottom: 4px !important;
+}
+
+.navbar .navbar-brand i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.navbar-nav {
+	margin-right: 30px;
+}
+
+.rounded-pill {
+    min-width: 500px !important;
+}
+
+.logo {
+	margin-right: 10px;
+}
+
+.search-box {
+	position: relative;
+}	
+.search-box input {
+	box-shadow: none;
+	padding-right: 35px;
+	border-radius: 3px !important;
+}
+.search-box .input-group-addon {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #bbc9eb;
+	font-size: 19px;
+}
+
+.navbar .nav-item i {
+
+	font-size: 18px;
+}
+
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.open > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+}
+.navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:active {
+	color: rgb(255, 255, 255);
+   background: #689fc4;
+}	
+.navbar .dropdown-item .material-icons {
+	font-size: 21px;
+	line-height: 16px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+
+	background: transparent !important;
+}
+
+@media (min-width: 1200px){
+	.form-inline .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 1199px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+
+@font-face {
+  font-family: rubikone;
+  src: url(fonts/RubikOne-Regular.ttf);
+}
+
+#personalInformation {
+	font-family: rubikone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 45px;
+	color: #CDC3C3;
+}
+
+.profileInfo {
+	font-family: rubikone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 45px;
+	color: #CDC3C3;
+}
+
+#username {
+	color: gray;
+}
+
+.card-img-top {
+	width: auto;
+	height: 195px;
+	padding: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
+/*	background-position: center center;
+	background-repeat: no-repeat;*/
+}
+
+.card {
+	margin: auto auto;
+	width: 85%;	
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categ {
+	background-color: #3184E4;
+	margin-bottom: 0px;
+}
+
+.categWord {
+	color: #FFFFFF;
+}
+
+.infoBox {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.borderRight {
+	border-right: 1px solid black;
+}
+
+.borderTop {
+	border-top: 1px solid black;
+}
+
+.borderBot {
+	border-bottom: 1px solid black;
+}
+
+.infoUnder {
+	background-color: #FFFFFF;
+    padding-left: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.recents {
+	margin: auto auto !important;
+}
+
+.hospitalCards {
+	width: 100%;
+	margin: 0px;
+	background-color: white;
+	box-shadow: none;
+	border: none;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.hospitalCol {
+	padding: 0px;
+	/* margin-right: 7px; */
+	margin-bottom: 15px;
+}
+
+/* .recentsCont {
+	background-color: white;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
+
+.ratings {
+	color: #F0803C;
+}
+
+.card-body {
+	padding-top: 0px;
+}
+
+.card-text {
+	margin-bottom: 2px;
+}
+
+.deleteInfo:focus {
+	outline: none !important;
+	box-shadow: none;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.deleteInfo:hover {
+	text-decoration: none;
+	color: #BA1F33;
+}
+
+.deleteInfo {
+	position: relative;
+	margin-left: auto;
+	color: red;
+}
+
+.edtiDiv {
+	text-align: right;
+}
+
+.editColChronic, .addInfo, .addColChronic {
+	display: none;
+	padding: 0px;
+	border-radius: 0px !important;
+	line-height: 1.5;
+}
+
+.formEditColChronic:focus {
+	outline: none !important;
+	box-shadow: none !important;
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+	color: #0b992c;
+}
+
+.formEditColChronic:enabled {
+	border: none;
+}
+
+.formEditColChronic {
+	border-radius: 0px;
+	font-weight: bold;
+	font-style: italic;
+	color: #0b992c;
+}
+
+.btn-chronic {
+	color: #3184E4;
+}
+
+.btnSubmit {
+	text-align: right;
+}
+
+.btn-primary {
+	background-color: #0b992c;
+	border: #0b992c;
+}
+
+.btn-primary:focus {
+	background-color: #0b992c !important;
+	border: #0b992c !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.btn-primary:hover {
+	background-color: green;
+}
+
+.formDiv {
+	display: none;
+	padding: 30px;
+    background-color: white;
+    margin-top: 20px;
+	border-radius: 3px;
+	/* border: 1px solid black; */
+    box-shadow: rgb(0 0 0 / 25%) 0px 0px 6px;
+}
+
+.delete-chronic {
+	color: red;
+}
+
+.add-chronic, .add-drug, .add-food, .add-medicine {
+	color: green;
+}
+
+.delete-chronic:hover, .deleteBtn:hover {
+	color: #BA1F33;
+}
+
+.add-chronic:hover, .add-drug:hover, .add-food:hover, .add-medicine:hover {
+	text-decoration: none;
+	color: #174210;
+}
+
+.add-chronic-back, .delete-chronic-back, .delete-drug-back, .add-drug-back{
+	display: none;
+}
+
+#formFile {
+	/* background-image: url("images/users/defaultpic.png"); */
+	height: auto;
+	width: 100%;
+	border: none;	
+}
+
+#divProfPic {
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: auto;
+	height: 195px;
+	margin: 30px;
+	margin-bottom: 20px;
+}
+
+.signInBtn {
+	width: 100% !important;
+	text-align: center;
+	padding: auto !important;
+}
+
+form.formRow label {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+#dateForm {
+	height: 38px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+#editbackbtn {
+	background-color: gray;
+}
+
+#editbackbtn:hover, #editbackbtn:focus {
+	background-color: rgb(90, 90, 90) !important;
+}
+
+.bloodTypeSelect {
+	height: 38px;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.modal {
+	overflow-y: hidden !important;
+}
+
+.ChronicAddBtnHidden, .DrugAddBtnHidden, .FoodAddBtnHidden, .MedicineAddBtnHidden {
+	display: none;
+}
+
+.deleteBtn {
+	display: none;
+	color: red;
+	margin-left: auto;
+	padding: 0px;
+	padding-right: 12px;
+	border-top: 0px;
+	border-bottom: 0px;
+}
+
+.deleteBtn:focus {
+	outline: none !important;
+	box-shadow: none;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.btn-link:focus {
+	outline: none !important;
+	box-shadow: none;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.btn-link:hover {
+	text-decoration: none;
+}
+
+.hospitalLink, .hospitalLink:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.hospitalTitle {
+	min-height: 48px;
+}
