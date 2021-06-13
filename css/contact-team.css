@@ -1,0 +1,393 @@
+/*navbar start*/
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 90%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-inline {
+	display: inline-block;
+}
+.navbar-header.col {
+	padding: 0 !important;
+}
+.navbar {		
+	background-color: #3184e4 !important;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-bottom: 30px;
+
+}
+
+.navbar .navbar-brand {
+	color: rgb(255, 255, 255);
+	padding-right: 20px;
+	font-family: 'Merienda One', sans-serif;
+}
+
+.navbar-brand {
+	padding-top: 8px !important;
+	padding-bottom: 4px !important;
+}
+
+.navbar .navbar-brand i {
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+.navbar-nav {
+	margin-right: 30px;
+}
+
+.rounded-pill {
+    min-width: 500px !important;
+}
+
+.logo {
+	margin-right: 10px;
+}
+
+.search-box {
+	position: relative;
+}	
+.search-box input {
+	box-shadow: none;
+	padding-right: 35px;
+	border-radius: 3px !important;
+}
+.search-box .input-group-addon {
+	min-width: 35px;
+	border: none;
+	background: transparent;
+	position: absolute;
+	right: 0;
+	z-index: 9;
+	padding: 7px;
+	height: 100%;
+}
+.search-box i {
+	color: #bbc9eb;
+	font-size: 19px;
+}
+
+.navbar .nav-item i {
+
+	font-size: 18px;
+}
+
+.navbar .dropdown-item i {
+	font-size: 16px;
+	min-width: 22px;
+}
+.navbar .nav-item.open > a {
+	background: none !important;
+}
+.navbar .dropdown-menu {
+	border-radius: 1px;
+	border-color: #e5e5e5;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.navbar .dropdown-menu a {
+	color: #777;
+	padding: 8px 20px;
+	line-height: normal;
+}
+.navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:active {
+	color: rgb(255, 255, 255);
+   background: #689fc4;
+}	
+.navbar .dropdown-item .material-icons {
+	font-size: 21px;
+	line-height: 16px;
+	vertical-align: middle;
+	margin-top: -2px;
+}
+
+.navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+
+	background: transparent !important;
+}
+
+@media (min-width: 768px){ 
+	.navbar-collapse.collapse {
+    display: flex!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+	}
+}
+
+@media (min-width: 1200px){
+	.form-inline .input-group {
+		width: 300px;
+		margin-left: 30px;
+	}
+}
+@media (max-width: 1199px){
+	.form-inline {
+		display: block;
+		margin-bottom: 10px;
+	}
+	.input-group {
+		width: 100%;
+	}
+}
+
+@font-face {
+  font-family: rubikone;
+  src: url(fonts/RubikOne-Regular.ttf);
+}
+
+#personalInformation {
+	font-family: rubikone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 45px;
+	color: #CDC3C3;
+}
+
+.profileInfo {
+	font-family: rubikone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 45px;
+	color: #CDC3C3;
+}
+/*.container-md {
+	border: 1px solid red;
+}
+.col-4, .col-3, .col-6, .col-8, .col{
+	border: 1px solid red !important;
+}*/
+
+.card-img-top {
+	width: auto;
+	height: 195px;
+	padding: 15px;
+/*	background-position: center center;
+	background-repeat: no-repeat;*/
+}
+
+.card {
+	margin: auto auto;
+	width: 85%;	
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.categ {
+	background-color: #3184E4;
+	margin-bottom: 0px;
+}
+
+.categWord {
+	color: #FFFFFF;
+}
+
+.infoBox {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.borderRight {
+	border-right: 1px solid black;
+}
+
+.borderTop {
+	border-top: 1px solid black;
+}
+
+.borderBot {
+	border-bottom: 1px solid black;
+}
+
+/*navbar end*/
+
+/*contact us*/
+
+body{
+	background: rgba(49,132,228,1);
+    background: linear-gradient(180deg, rgba(49,132,228,1), rgba(161,195,234,1))!important;
+}
+.contact-form{
+    background: #fff;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+	background-image: white;
+    border-radius: 6rem;
+    width: 20%;
+    margin-top: -10%;
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 50%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #0062cc;
+    border: none;
+    cursor: pointer;
+}
+
+/*end of message us*/
+
+/*start of meditect team details */
+
+      .second-portion
+        {
+        	margin-top:50px; 
+        }
+
+		@import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+		@import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+
+		.box > .icon { 
+            text-align: center; 
+            position: relative; 
+        }
+
+		.box > .icon > .image { 
+            position: relative; 
+            z-index: 2; 
+            margin: auto; 
+            width: 88px; 
+            height: 88px; 
+            border: 8px solid white; 
+            line-height: 88px; 
+            border-radius: 50%; 
+            background: #00bfff; 
+            vertical-align: middle; 
+        }
+		.box > .icon:hover > .image { 
+            background: #dc3545; 
+        }
+
+		.box > .icon > .image > i { 
+            font-size: 36px !important; 
+            color: #fff !important; 
+        }
+
+		.box > .icon:hover > .image > i { 
+            color: white !important; 
+        }
+
+		.box > .icon > .info { 
+            margin-top: -24px; 
+            background: white; 
+            border: 1px solid #e0e0e0; 
+            padding: 15px 0 10px 0; 
+            min-height:163px;
+        }
+
+		.box > .icon:hover > .info { 
+            background: white; 
+            border-color: #e0e0e0; 
+            color: white; 
+        }
+
+		.box > .icon > .info > h3.title { 
+            font-family: "Robot",sans-serif !important; 
+            font-size: 16px; 
+            color: #222; 
+            font-weight: 700; 
+        }
+
+		.box > .icon > .info > p { 
+            font-family: "Robot",sans-serif !important; 
+            font-size: 13px; 
+            color: #666; 
+            line-height: 1.5em; 
+            margin: 20px;
+        }
+
+		.box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > 
+        p, .box > .icon:hover > .info > .more > a { 
+            color: #222; 
+        }
+
+		.box > .icon > .info > .more a { 
+            font-family: "Robot",sans-serif !important; 
+            font-size: 12px; 
+            color: #222; 
+            line-height: 12px; 
+            text-transform: uppercase; 
+            text-decoration: none; 
+        }
+
+		.box > .icon:hover > .info > .more > a { 
+            color: #fff; 
+            padding: 6px 8px; 
+            background-color: #63B76C; 
+        }
+
+		.box .space { 
+            height: 30px; 
+        }
+
+		@media only screen and (max-width: 768px)
+		{
+			.contact-form
+			{
+				margin-top:25px; 
+			}
+
+			.btn-send
+			{
+				width: 100%;
+				padding:10px; 
+			}
+
+			.second-portion
+			{
+				margin-top:25px; 
+			}
+		}
+
+        h1, h2, h3 {
+            margin-top: 50px;
+            margin-bottom: 10px;
+        }
+
+	/* Conatct end */
