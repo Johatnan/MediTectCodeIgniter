@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <nav class="navbar navbar-expand-xl navbar-light bg-light">
         <a href="index.php" class="navbar-brand">
             <img class = "logo" src = "images/meditect-logo.png" width = "50px"></i>Medi<b>Tect</b>
         </a>
