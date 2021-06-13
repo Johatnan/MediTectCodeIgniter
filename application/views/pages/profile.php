@@ -208,9 +208,15 @@
 
                       <?php
                         if(!empty($meditect_client) and !empty($meditect_client[0])){
-                          echo'
-                            <input type="text" class="form-control" name = "user_first_name" value="'.$meditect_client[0]['user_first_name'].'">
-                          ';                          
+                          if (!empty($meditect_client[0]['user_first_name']) and $meditect_client[0]['user_first_name'] != '') {
+                            echo'
+                              <input type="text" class="form-control" name = "user_first_name" value="'.$meditect_client[0]['user_first_name'].'">
+                            ';        
+                          } else {
+                            echo'
+                              <input type="text" class="form-control" name = "user_first_name">
+                            ';  
+                          }
                         } else {
                           echo'
                             <input type="text" class="form-control" name = "user_first_name">
@@ -224,9 +230,15 @@
 
                       <?php
                         if(!empty($meditect_client) and !empty($meditect_client[0])){
-                          echo'
-                          <input type="text" class="form-control" name = "user_last_name" value="'.$meditect_client[0]['user_last_name'].'">
-                          ';                          
+                          if (!empty($meditect_client[0]['user_last_name']) and $meditect_client[0]['user_last_name'] != '') {
+                            echo'
+                              <input type="text" class="form-control" name = "user_last_name" value="'.$meditect_client[0]['user_last_name'].'">
+                            ';  
+                          } else {
+                            echo'
+                              <input type="text" class="form-control" name = "user_last_name">
+                            ';  
+                          }                       
                         } else {
                           echo'
                             <input type="text" class="form-control" name = "user_last_name">
@@ -240,9 +252,15 @@
 
                       <?php
                         if(!empty($meditect_client) and !empty($meditect_client[0])){
-                          echo'
-                          <input type="text" class="form-control" name = "user_address" value="'.$meditect_client[0]['user_address'].'">
-                          ';                          
+                          if(!empty($meditect_client[0]['user_address']) and $meditect_client[0]['user_address'] != '') {
+                            echo'
+                              <input type="text" class="form-control" name = "user_address" value="'.$meditect_client[0]['user_address'].'">
+                            ';   
+                          } else {
+                            echo'
+                              <input type="text" class="form-control" name = "user_address">
+                            ';  
+                          }                         
                         } else {
                           echo'
                             <input type="text" class="form-control" name = "user_address">
@@ -270,9 +288,15 @@
 
                     <?php
                         if(!empty($meditect_client) and !empty($meditect_client[0])){
-                          echo'
-                            <input type="date" name="user_birthdate" id="dateForm" value="'.$meditect_client[0]['user_birthdate'].'">
-                          ';                          
+                          if(!empty($meditect_client[0]['user_birthdate']) and $meditect_client[0]['user_birthdate'] != '0000-00-00') {
+                            echo'
+                              <input type="date" name="user_birthdate" id="dateForm" value="'.$meditect_client[0]['user_birthdate'].'">
+                            ';   
+                          } else {
+                            echo'
+                              <input type="date" name="user_birthdate" id="dateForm" value="2000-01-01">
+                            ';  
+                          }                         
                         } else {
                           echo'
                             <input type="date" name="user_birthdate" id="dateForm" value="2000-01-01">
@@ -288,9 +312,15 @@
 
                       <?php
                         if(!empty($meditect_client) and !empty($meditect_client[0])){
-                          echo'
-                          <input type="Number" class="form-control" name="user_age" aria-label="Amount (to the nearest dollar)" value="'.$meditect_client[0]['user_age'].'">
-                          ';                          
+                          if(!empty($meditect_client[0]['user_age']) and $meditect_client[0]['user_age'] != '0') {
+                            echo'
+                              <input type="Number" class="form-control" name="user_age" aria-label="Amount (to the nearest dollar)" value="'.$meditect_client[0]['user_age'].'">
+                            ';     
+                          } else {
+                            echo'
+                              <input type="text" class="form-control" name = "user_age">
+                            ';  
+                          }                       
                         } else {
                           echo'
                             <input type="text" class="form-control" name = "user_age">
@@ -306,9 +336,15 @@
 
                       <?php
                         if(!empty($meditect_client) and !empty($meditect_client[0])){
-                          echo'
-                          <input type="Number" class="form-control" name="user_weight" aria-label="Amount (to the nearest dollar)" value="'.$meditect_client[0]['user_weight'].'">
-                          ';                          
+                          if(!empty($meditect_client[0]['user_weight']) and $meditect_client[0]['user_weight'] != '0') {
+                            echo'
+                              <input type="Number" class="form-control" name="user_weight" aria-label="Amount (to the nearest dollar)" value="'.$meditect_client[0]['user_weight'].'">
+                            ';  
+                          } else {
+                            echo'
+                              <input type="text" class="form-control" name = "user_weight">
+                            ';  
+                          }                         
                         } else {
                           echo'
                             <input type="text" class="form-control" name = "user_weight">
@@ -325,9 +361,15 @@
 
                       <?php
                         if(!empty($meditect_client) and !empty($meditect_client[0])){
-                          echo'
-                          <input type="Number" class="form-control" name="user_height" aria-label="Amount (to the nearest dollar)" value="'.$meditect_client[0]['user_height'].'">
-                          ';                          
+                          if(!empty($meditect_client[0]['user_height']) and $meditect_client[0]['user_height'] != '0') {
+                            echo'
+                              <input type="Number" class="form-control" name="user_height" aria-label="Amount (to the nearest dollar)" value="'.$meditect_client[0]['user_height'].'">
+                            ';
+                          } else {
+                            echo'
+                              <input type="text" class="form-control" name = "user_height">
+                            ';  
+                          }                          
                         } else {
                           echo'
                             <input type="text" class="form-control" name = "user_height">
