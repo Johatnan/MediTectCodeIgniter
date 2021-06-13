@@ -4,20 +4,19 @@ class Home extends CI_Controller {
     
     public function view($param = null) {
 
-        if($param == null){
+        if($param == 'profile'){
             
-            $page = 'home';
+            $page = 'profile';
 
             if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
                 show_404();
             }
 
-            $data['title'] = "Old Posts";
-            $data['document'] = "This is a new document";
-            $data['posts'] = $this->Posts_model->get_posts();
+            $data['client'][0] = $this->Posts_model->get_posts_single(0);
+            $data['full_name'] = $data['client'][0]['full_name'];
 
             // echo '<pre>';
-            // print_r($data['posts']);
+            // print_r($data['client']);
             
             $this->load->view('templates/header');
             $this->load->view('pages/'.$page, $data);
@@ -32,13 +31,14 @@ class Home extends CI_Controller {
                 show_404();
             }
 
-            $data['posts'] = $this->Posts_model->get_posts_single($param);
-            $data['title'] = $data['posts']['title'];
+            $data['client'][0] = $this->Posts_model->get_posts_single($param);
+            $data['client'][1] = $this->Posts_model->get_user_records($param);
+            $data['full_name'] = $data['client'][0]['full_name'];
             
             $this->load->view('templates/header');
             $this->load->view('pages/'.$page, $data);
-            $this->load->view('templates/disqus_embeded');
-            $this->load->view('templates/footer');
+            // $this->load->view('templates/disqus_embeded');
+            // $this->load->view('templates/footer');
         }
 
     }
