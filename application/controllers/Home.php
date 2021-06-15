@@ -40,11 +40,11 @@ class Home extends CI_Controller {
                 show_404();
             }
 
-            $this->load->view('templates/header-abtlink');
+            $this->load->view('templates/header-conlink');
             $this->load->view('templates/header-navbar');
             $this->load->view('pages/'.$page);
-            $this->load->view('templates/disqus_embeded');
             $this->load->view('templates/footer');
+            $this->load->view('templates/contact-us-backend');
             
         } elseif (strpos($param, 'profile') !== false) {
             
