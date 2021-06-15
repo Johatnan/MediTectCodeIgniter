@@ -13,11 +13,20 @@ class Home extends CI_Controller {
             }
 
             $data['meditect_client'] = $this->Posts_model->get_user_profile(0);
-            
-            // while ($row = $this->Posts_model->get_user_records(0)) {
-            //     array_push($data['meditect_client'], $row);
-            // }
-            
+            $records = $this->Posts_model->get_user_records(0);
+            $recents = $this->Posts_model->get_user_recents(0);
+
+            for ($i = 0; $i < count($records); $i++){
+
+                array_push($data['meditect_client'], $records[$i]);
+
+            }
+
+            for ($i = 0; $i < count($recents); $i++){
+
+                array_push($data['meditect_client'], $recents[$i]);
+
+            }            
 
             $_SESSION['isLogin'] = true;
             $_SESSION['name'] = $data['meditect_client'][0]['full_name'];

@@ -33,9 +33,29 @@ class Posts_model extends CI_Model {
 
         $this->db->where('id', $param);
         $result_records = $this->db->get('user_health_records');
-        array_push($results, $result_records->row_array());
-        
-        return $results;
+
+        return $result_records->result_array();
+
+    }
+
+    public function get_user_recents($param) {
+
+        $results = array();
+
+        $query = $this->db->query("SELECT 
+                hospitals.hospital_name, 
+                hospitals.img_1, 
+                hospitals.rating, 
+                hospitals.hospital_address, 
+                hospitals.hospital_contact 
+            FROM hospitals 
+            INNER JOIN user_recents 
+            ON 
+                user_recents.id = ".$param." AND 
+                user_recents.first_recents=hospitals.hospital_name
+        ");
+
+        return $query->result_array();
 
     }
 

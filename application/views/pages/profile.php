@@ -1,12 +1,12 @@
-<div class = "container-sm mb-3">
+        <div class = "container-sm mb-3">
             <p class="text-center mb-0" id = "personalInformation">
                 ----------------- Personal Information -----------------
             </p>
-            <pre>
+            <!-- <pre>
               <?php 
                 print_r($meditect_client);
                 // print_r(count($meditect_client)-1);
-              ?>
+              ?> -->
         </div>
 
         <!-- -------------start of profile------------ -->
@@ -1028,10 +1028,12 @@
                   <!-- -------------------------------------- -->
 
                   <?php
+                  
+                    $counter = 0;
 
-                    for ($i = 0; $i < 9; $i++) {
+                    for ($i = 0; $i < count($meditect_client); $i++) {
 
-                      if (!empty($meditect_client[$i]['hospital_name']) and 
+                        if (!empty($meditect_client[$i]['hospital_name']) and 
                           !empty($meditect_client[$i]['img_1']) and 
                           !empty($meditect_client[$i]['rating']) and
                           !empty($meditect_client[$i]['hospital_address']) and
@@ -1096,11 +1098,17 @@
 
                         ';
 
+                        $counter++;
+
+                      } //if statement 
+                      
+                      if ($counter == 9) {
+
+                        break;
+
                       }
 
-                      
-
-                    }
+                    } //for loop
 
                   ?>
 
