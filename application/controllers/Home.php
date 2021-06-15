@@ -12,14 +12,27 @@ class Home extends CI_Controller {
                 show_404();
             }
 
-            $data['title'] = "Old Posts";
-            $data['document'] = "This is a new document";
-            $data['posts'] = $this->Posts_model->get_posts();
+            // $this->Post_model->get_post();
             
-            $this->load->view('templates/header');
-            $this->load->view('pages/'.$page, $data);
+            $this->load->view('templates/header-homelink');
+            $this->load->view('templates/header-navbar');
+            $this->load->view('pages/'.$page);
 
-        } elseif($param == 'profile'){
+        } elseif ($param == 'aboutus') {
+            
+            $page = 'about-us';
+
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
+
+            $this->load->view('templates/header-abtlink');
+            $this->load->view('templates/header-navbar');
+            $this->load->view('pages/'.$page);
+            $this->load->view('templates/disqus_embeded');
+            $this->load->view('templates/footer');
+               
+        } elseif ($param == 'profile'){
             
             $page = 'profile';
 
