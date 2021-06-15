@@ -18,7 +18,7 @@ class Home extends CI_Controller {
             $this->load->view('templates/header-navbar');
             $this->load->view('pages/'.$page);
 
-        } elseif ($param == 'about-us') {
+        } elseif (strpos($param, 'about-us') !== false) {
             
             $page = 'about-us';
 
@@ -32,7 +32,21 @@ class Home extends CI_Controller {
             $this->load->view('templates/disqus_embeded');
             $this->load->view('templates/footer');
                
-        } elseif ($param == 'profile'){
+        } elseif (strpos($param, 'contact-us') !== false) {
+            
+            $page = 'contact-us';
+
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
+
+            $this->load->view('templates/header-abtlink');
+            $this->load->view('templates/header-navbar');
+            $this->load->view('pages/'.$page);
+            $this->load->view('templates/disqus_embeded');
+            $this->load->view('templates/footer');
+            
+        } elseif (strpos($param, 'profile') !== false) {
             
             $page = 'profile';
 
