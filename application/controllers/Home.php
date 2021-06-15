@@ -18,7 +18,7 @@ class Home extends CI_Controller {
             $this->load->view('templates/header-navbar');
             $this->load->view('pages/'.$page);
 
-        } elseif ($param == 'aboutus') {
+        } elseif ($param == 'about-us') {
             
             $page = 'about-us';
 
