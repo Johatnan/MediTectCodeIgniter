@@ -1,4 +1,4 @@
- <?php include 'angat_header.php';?>
+
     <!-- Body -->
 
     <!-- Content-->
@@ -54,4 +54,3 @@
             </form>
         </div>
     </div>
-<?php include 'angat_footer.php';?>
