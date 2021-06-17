@@ -79,19 +79,12 @@ class Posts_model extends CI_Model {
 
         if ($query->num_rows > 0) {
 
-            $_SESSION['name'] = $row['full_name'];
-            // $_SESSION['image'] = $row['user_img'];
-            $_SESSION['id'] = $row['id'];
-            $_SESSION['email'] = $row['email'];
-            $_SESSION['isLogin'] = true;
-            header("Location: profile.php");
-            // echo"Login done";
-            
+           return true;
+
           } else {
-            //invalid credentials
-            $_SESSION['isLogin'] = false;
-            echo"Login error";
-            header("Location: login.php?error=Incorrect Credentials");
+
+            return false;
+            
           }
         
     }
