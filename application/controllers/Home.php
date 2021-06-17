@@ -46,6 +46,14 @@ class Home extends CI_Controller {
             $this->load->view('templates/footer');
             $this->load->view('templates/contact-us-backend');
             
+        } elseif (strpos($param, 'editprofile') !== false) {
+
+            $this->Posts_model->edit_user_profile();
+        
+        } elseif (strpos($param, 'add_profile') !== false) {
+
+            $this->Posts_model->add_user_profile();
+        
         } elseif (strpos($param, 'profile') !== false) {
             
             $page = 'profile';
@@ -55,9 +63,16 @@ class Home extends CI_Controller {
 
             }
 
-            $data['meditect_client'] = $this->Posts_model->get_user_profile($_SESSION['id']);
+            $data['meditect_client'] = [];
+            $profile = $this->Posts_model->get_user_info($_SESSION['id']);
             $records = $this->Posts_model->get_user_records($_SESSION['id']);
             $recents = $this->Posts_model->get_user_recents($_SESSION['id']);
+
+            for ($i = 0; $i < count($profile); $i++){
+
+                array_push($data['meditect_client'], $profile[$i]);
+
+            }
 
             for ($i = 0; $i < count($records); $i++){
 
@@ -70,15 +85,19 @@ class Home extends CI_Controller {
                 array_push($data['meditect_client'], $recents[$i]);
 
             }            
-
-            $_SESSION['isLogin'] = true;
-            $_SESSION['name'] = $data['meditect_client'][0]['full_name'];
             
             $this->load->view('templates/profile_header');
             $this->load->view('templates/bueno_header');
             $this->load->view('pages/'.$page, $data);
             $this->load->view('templates/profile_footer');
             
+        } elseif (strpos($param, 'delete_health_records') !== false) {
+
+            $this->Posts_model->delete_user_records();
+
+        } elseif (strpos($param, 'add_health_records') !== false) {
+
+            $this->Posts_model->add_user_records();
 
         } elseif (strpos($param, 'login') !== false) {
 

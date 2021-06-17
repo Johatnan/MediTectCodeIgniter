@@ -22,12 +22,6 @@
                 }
               }
            ?>
-          
-            <form class="navbar-form form-inline">
-                <div class="input-group search-box ml-1">                                
-                    <input class="form-control mr-sm-2 rounded-pill pl-1" type="search" placeholder="   Search for anything" aria-label="Search" name="query">
-                </div>
-            </form>
 
             <!-- -----------right navbar---------- -->
 
