@@ -52,11 +52,12 @@ class Home extends CI_Controller {
 
             if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
                 show_404();
+
             }
 
-            $data['meditect_client'] = $this->Posts_model->get_user_profile(0);
-            $records = $this->Posts_model->get_user_records(0);
-            $recents = $this->Posts_model->get_user_recents(0);
+            $data['meditect_client'] = $this->Posts_model->get_user_profile($_SESSION['id']);
+            $records = $this->Posts_model->get_user_records($_SESSION['id']);
+            $recents = $this->Posts_model->get_user_recents($_SESSION['id']);
 
             for ($i = 0; $i < count($records); $i++){
 
@@ -77,19 +78,29 @@ class Home extends CI_Controller {
             $this->load->view('templates/bueno_header');
             $this->load->view('pages/'.$page, $data);
             $this->load->view('templates/profile_footer');
+            
 
         } elseif (strpos($param, 'login') !== false) {
 
-            $page = 'login';
+                $page = 'login';
+        
+                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                    show_404();
+                }
+        
+                $this->load->view('templates/angat_header');
+                $this->load->view('pages/'.$page);
+                $this->load->view('templates/angat_footer');
 
-            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                show_404();
-            }
+        } elseif (strpos($param, 'authenticate') !== false) {
 
-            $this->load->view('templates/angat_header');
-            $this->load->view('pages/'.$page);
-            $this->load->view('templates/angat_footer');  
-
+                $page = 'authenticate';
+        
+                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                    show_404();
+                }
+                $this->load->view('pages/'.$page);
+                
         } else {
 
             $page = 'single';
@@ -106,6 +117,7 @@ class Home extends CI_Controller {
             $this->load->view('pages/'.$page, $data);
         }
 
+        
     }
 
 }

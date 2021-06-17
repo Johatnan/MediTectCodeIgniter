@@ -68,6 +68,8 @@ class Posts_model extends CI_Model {
         array_push($results, $result_clients->row_array());
 
         return $results;
+    }
+
 
         // $this->db->query('SELECT FROM....')
         // $result_recents = mysqli_query($conn, $sql_recents);
@@ -125,7 +127,5 @@ class Posts_model extends CI_Model {
 
         // //.4 Closing Database Connection
         // mysqli_close($conn);
-
-    }
 
 }
