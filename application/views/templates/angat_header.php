@@ -58,7 +58,7 @@
             
             <div class="navbar-nav ml-auto"> 
                 <div class="container">
-                    <form class="row" action="authenticate.php" method="post">
+                    <form class="row" action="<?php echo base_url(); ?>Post_model/authenticate" method="post">
                         <div class="col-md-5">
                             <label class="text" style="color:white;">Email</label>
                             <input type="email" class="form-control" name="email" required>

@@ -69,6 +69,34 @@ class Posts_model extends CI_Model {
 
         return $results;
 
+    }
+    public function authenticate($email,$password){
+
+       $this->db->where('email',$email);
+       $this->db->where('password',$password);
+       //user found
+       $query = $this->db->get('meditect_client');
+
+        if ($query->num_rows > 0) {
+
+            $_SESSION['name'] = $row['full_name'];
+            // $_SESSION['image'] = $row['user_img'];
+            $_SESSION['id'] = $row['id'];
+            $_SESSION['email'] = $row['email'];
+            $_SESSION['isLogin'] = true;
+            header("Location: profile.php");
+            // echo"Login done";
+            
+          } else {
+            //invalid credentials
+            $_SESSION['isLogin'] = false;
+            echo"Login error";
+            header("Location: login.php?error=Incorrect Credentials");
+          }
+        
+    }
+
+}
         // $this->db->query('SELECT FROM....')
         // $result_recents = mysqli_query($conn, $sql_recents);
         // while ($row = mysqli_fetch_assoc($result_recents)) {
@@ -125,7 +153,3 @@ class Posts_model extends CI_Model {
 
         // //.4 Closing Database Connection
         // mysqli_close($conn);
-
-    }
-
-}
