@@ -71,7 +71,15 @@
 
                 <div class="navbar-nav ml-auto">
                     <div class="nav-item dropdown">
-                        <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action" style = "color:white!important"><i class="fa fa-stethoscope" aria-hidden="true" style = "color:white!important"></i> User Profile</a>
+                        <?php
+                        if (isset($_SESSION['isLogin'])) {
+                            if ($_SESSION['isLogin'] == true) {
+                                echo '
+                                    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action" style = "color:white!important"><i class="fa fa-stethoscope" aria-hidden="true" style = "color:white!important"></i> '.$_SESSION['name'].'</a>
+                                ';
+                            }
+                        }
+                        ?>
                         <div class="dropdown-menu">
                             <a href="profile.php" class="dropdown-item"><i class="fa fa-user"></i> Profile</a></a>
                             <a href="about-us.php" class="dropdown-item"><i class="fa fa-heart"></i></i> About us</a></a>
