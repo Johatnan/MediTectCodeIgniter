@@ -110,6 +110,18 @@ class Home extends CI_Controller {
                 }
                 $this->load->view('pages/'.$page);
 
+        } elseif (strpos($param, 'searchHospital') !== false) {
+
+                $page = 'searchHospital';
+
+                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                    show_404();
+                }
+
+                $this->load->view('templates/searchHospital_header');
+                $this->load->view('pages/'.$page);
+                $this->load->view('templates/searchHospital_footer');
+
         } else {
 
             $page = 'single';

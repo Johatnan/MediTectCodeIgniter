@@ -16,7 +16,7 @@
                 if ($_SESSION['isLogin'] == true) {
                   echo '
                       <div class="navbar-nav">
-                          <a href="searchHospital.php" class="nav-item nav-link"style = "color:white!important">Hospitals</a>
+                          <a href="searchHospital.php?default" class="nav-item nav-link"style = "color:white!important">Hospitals</a>
                       </div>
                   ';
                 }
