@@ -2,6 +2,7 @@
 </html>
 
 <?php
+
     if(isset($_POST['btnSubmit'])){
 
         if (empty($_POST['txtName']) || empty($_POST['txtEmail']) ||  empty($_POST['txtMsg'])) {
@@ -18,7 +19,13 @@
             header("Location: contact-us.php");
         } else {
 
-            include 'setup_db.php';
+            $epassword = md5($password);
+            $servername = "localhost";
+            $db_username = "root"; //xampp default
+            $db_password = "";  //xampp default
+            $database = "meditect_database";
+
+            $conn = mysqli_connect($servername, $db_username, $db_password, $database);
 
             $name = $_POST['txtName'];
             $email = $_POST['txtEmail'];
@@ -30,8 +37,8 @@
                 $btnSubmit = "btnSubmit";
                 $_SESSION['btnSubmit'] = $btnSubmit;
                 header("Location: contact-us.php");
-
             }
         }    
     }
+
 ?>
