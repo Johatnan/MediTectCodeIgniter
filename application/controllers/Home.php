@@ -122,6 +122,28 @@ class Home extends CI_Controller {
                 $this->load->view('pages/'.$page);
                 $this->load->view('templates/searchHospital_footer');
 
+        } elseif (strpos($param, 'hospitalProfile') !== false) {
+
+                $page = 'hospitalProfile';
+
+                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                    show_404();
+                }
+
+                $this->load->view('templates/hospitalProfile_header');
+                $this->load->view('pages/'.$page);
+                $this->load->view('templates/hospitalProfile_footer');
+
+        } elseif (strpos($param, 'user_recently_searched') !== false) {
+
+                $page = 'user_recently_searched';
+
+                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                    show_404();
+                }
+
+                $this->load->view('pages/'.$page);
+
         } else {
 
             $page = 'single';
