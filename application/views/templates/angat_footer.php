@@ -20,10 +20,10 @@ if(isset($_POST['signup'])){
            //1. Setup Database connection
 
             $epassword = md5($password);
-            $servername = "localhost";
-            $db_username = "root"; //xampp default
-            $db_password = "";  //xampp default
-            $database = "meditect_database";
+            $servername = "eu-cdbr-west-01.cleardb.com";
+            $db_username = "bb372c9ecfbe6e"; //xampp default
+            $db_password = "f8312940";  //xampp default
+            $database = "heroku_5b8ce60be14add9";
 
             $conn = mysqli_connect($servername, $db_username, $db_password, $database);
 
