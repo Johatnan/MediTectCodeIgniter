@@ -101,25 +101,29 @@ class Home extends CI_Controller {
 
         } elseif (strpos($param, 'login') !== false) {
 
-                $page = 'login';
-        
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
-        
-                $this->load->view('templates/angat_header');
-                $this->load->view('pages/'.$page);
-                $this->load->view('templates/angat_footer');
+            $page = 'login';
+    
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
+    
+            $this->load->view('templates/angat_header');
+            $this->load->view('pages/'.$page);
+            $this->load->view('templates/angat_footer');
 
         } elseif (strpos($param, 'authenticate') !== false) {
 
-                $page = 'authenticate';
-        
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
-                $this->load->view('pages/'.$page);
+            $page = 'authenticate';
+    
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
+            $this->load->view('pages/'.$page);
                 
+        } elseif (strpos($param, 'authenticate') !== false) {
+            
+            $this->Posts_model->user_logout();
+            
         } else {
 
             $page = 'single';
