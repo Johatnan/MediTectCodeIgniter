@@ -107,9 +107,9 @@ class Home extends CI_Controller {
                 show_404();
             }
     
-            $this->load->view('templates/angat_header');
-            // $this->load->view('pages/'.$page);
-            // $this->load->view('templates/angat_footer');
+            // $this->load->view('templates/angat_header');
+            $this->load->view('pages/'.$page);
+            $this->load->view('templates/angat_footer');
 
         } elseif (strpos($param, 'authenticate') !== false) {
 
