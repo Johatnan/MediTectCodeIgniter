@@ -107,7 +107,7 @@ class Home extends CI_Controller {
                 show_404();
             }
     
-            // $this->load->view('templates/angat_header');
+            $this->load->view('templates/angat_header');
             $this->load->view('pages/'.$page);
             $this->load->view('templates/angat_footer');
 
@@ -120,7 +120,7 @@ class Home extends CI_Controller {
             }
             $this->load->view('pages/'.$page);
                 
-        } elseif (strpos($param, 'authenticate') !== false) {
+        } elseif (strpos($param, 'logout') !== false) {
             
             $this->Posts_model->user_logout();
             
