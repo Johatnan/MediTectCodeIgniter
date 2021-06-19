@@ -111,10 +111,10 @@
             $hospitals = [];
 
             //1. Setup Database connection
-            $servername = "localhost";
-            $db_username = "root"; //xampp default
-            $db_password = "";  //xampp default
-            $database = "meditect_database";
+            $servername = "eu-cdbr-west-01.cleardb.com";
+			$db_username = "bb372c9ecfbe6e"; //xampp default
+			$db_password = "f8312940";  //xampp default
+			$database = "heroku_5b8ce60be14add9";
 
             $conn = mysqli_connect($servername, $db_username, $db_password, $database);
              //2. SELECT SQL
@@ -178,10 +178,10 @@
             $hospital_name = $_GET['hospital_name'];
             $hospitals = [];
             //1. Setup Database connection
-            $servername = "localhost";
-            $db_username = "root"; //xampp default
-            $db_password = "";  //xampp default
-            $database = "meditect_database";
+            $servername = "eu-cdbr-west-01.cleardb.com";
+			$db_username = "bb372c9ecfbe6e"; //xampp default
+			$db_password = "f8312940";  //xampp default
+			$database = "heroku_5b8ce60be14add9";
 
             $conn = mysqli_connect($servername, $db_username, $db_password, $database);
              //2. SELECT SQL
@@ -242,10 +242,10 @@
 
             $hospitals = [];
             //1. Setup Database connection
-            $servername = "localhost";
-            $db_username = "root"; //xampp default
-            $db_password = "";  //xampp default
-            $database = "meditect_database";
+            $servername = "eu-cdbr-west-01.cleardb.com";
+			$db_username = "bb372c9ecfbe6e"; //xampp default
+			$db_password = "f8312940";  //xampp default
+			$database = "heroku_5b8ce60be14add9";
 
             $conn = mysqli_connect($servername, $db_username, $db_password, $database);
 
@@ -337,10 +337,10 @@
                $hospitals = [];
 
             //1. Setup Database connection
-            $servername = "localhost";
-            $db_username = "root"; //xampp default
-            $db_password = "";  //xampp default
-            $database = "meditect_database";
+            $servername = "eu-cdbr-west-01.cleardb.com";
+			$db_username = "bb372c9ecfbe6e"; //xampp default
+			$db_password = "f8312940";  //xampp default
+			$database = "heroku_5b8ce60be14add9";
 
             $conn = mysqli_connect($servername, $db_username, $db_password, $database);
              //2. SELECT SQL

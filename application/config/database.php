@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'meditect_database',
+	'hostname' => 'eu-cdbr-west-01.cleardb.com',
+	'username' => 'bb372c9ecfbe6e',
+	'password' => 'f8312940',
+	'database' => 'heroku_5b8ce60be14add9',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
