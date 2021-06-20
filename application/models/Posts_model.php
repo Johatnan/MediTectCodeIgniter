@@ -293,4 +293,12 @@ class Posts_model extends CI_Model {
 
     }
 
+    public function user_logout() {
+
+        session_start();
+        session_destroy();
+        header('Location: login.php');
+
+    }
+
 }

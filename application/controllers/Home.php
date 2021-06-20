@@ -101,68 +101,69 @@ class Home extends CI_Controller {
 
         } elseif (strpos($param, 'login') !== false) {
 
-                $page = 'login';
-        
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
-        
-                $this->load->view('templates/angat_header');
-                $this->load->view('pages/'.$page);
-                $this->load->view('templates/angat_footer');
+            $page = 'login';
+    
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
+    
+            $this->load->view('templates/angat_header');
+            $this->load->view('pages/'.$page);
+            $this->load->view('templates/angat_footer');
 
         } elseif (strpos($param, 'authenticate') !== false) {
 
-                $page = 'authenticate';
-        
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
-                $this->load->view('pages/'.$page);
+            $page = 'authenticate';
+    
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
+          
+            $this->load->view('pages/'.$page);
 
         } elseif (strpos($param, 'logout') !== false) {
 
-                $page = 'logout';
+            $page = 'logout';
 
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
-                $this->load->view('pages/'.$page);
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
+            $this->load->view('pages/'.$page);
 
         } elseif (strpos($param, 'searchHospital') !== false) {
 
-                $page = 'searchHospital';
+            $page = 'searchHospital';
 
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
 
-                $this->load->view('templates/searchHospital_header');
-                $this->load->view('pages/'.$page);
-                $this->load->view('templates/searchHospital_footer');
+            $this->load->view('templates/searchHospital_header');
+            $this->load->view('pages/'.$page);
+            $this->load->view('templates/searchHospital_footer');
 
         } elseif (strpos($param, 'hospitalProfile') !== false) {
 
-                $page = 'hospitalProfile';
+            $page = 'hospitalProfile';
 
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
 
-                $this->load->view('templates/hospitalProfile_header');
-                $this->load->view('pages/'.$page);
-                $this->load->view('templates/hospitalProfile_footer');
+            $this->load->view('templates/hospitalProfile_header');
+            $this->load->view('pages/'.$page);
+            $this->load->view('templates/hospitalProfile_footer');
 
         } elseif (strpos($param, 'user_recently_searched') !== false) {
 
-                $page = 'user_recently_searched';
+            $page = 'user_recently_searched';
 
-                if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
-                    show_404();
-                }
+            if (!file_exists(APPPATH.'views/pages/'.$page.'.php')) {
+                show_404();
+            }
 
-                $this->load->view('pages/'.$page);
-
+            $this->load->view('pages/'.$page);
+          
         } else {
 
             $page = 'single';
@@ -178,7 +179,6 @@ class Home extends CI_Controller {
             $this->load->view('templates/header');
             $this->load->view('pages/'.$page, $data);
         }
-
         
     }
 
