@@ -2,8 +2,8 @@
 <html lang="en" class="no-js">
 
     <head>
-       <meta charset="utf-8">
 
+       <meta charset="utf-8">
        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
        <title>About MediTect</title>
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
@@ -19,27 +19,27 @@
        <link rel="shortcut icon" href="images/meditect-logo.png">
 
        <!-- banner -->
-       <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <!-- end of banner -->
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <!-- end of banner -->
 
-        <style>
+      <style>
 
-@font-face {
-  font-family: quicksand;
-  src: url(css/fonts/Quicksand_Book.otf);
-  font-style: normal;
-  font-size: 20px;
-  line-height: 25px;
-}
+      @font-face {
+        font-family: quicksand;
+        src: url(css/fonts/Quicksand_Book.otf);
+        font-style: normal;
+        font-size: 20px;
+        line-height: 25px;
+      }
 
-body {
-    background: #f6fdff;
-    font-family: quicksand !important;
-}
+      body {
+          background: #f6fdff;
+          font-family: quicksand !important;
+      }
 
-</style>
+    </style>
        
     </head> 
 

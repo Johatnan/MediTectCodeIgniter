@@ -20,7 +20,7 @@
 
         $count = $query->result_array();
 
-        if($count > 0){
+        if(!empty($count)){
             print_r($count);
             $_SESSION['name'] = $count[0]['full_name'];
             $_SESSION['id'] = $count[0]['id'];

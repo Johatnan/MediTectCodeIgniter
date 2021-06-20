@@ -1,7 +1,5 @@
-    </body>
-</html>
-
 <?php
+
     if(isset($_POST['btnSubmit'])){
 
         if (empty($_POST['txtName']) || empty($_POST['txtEmail']) ||  empty($_POST['txtMsg'])) {
@@ -18,7 +16,12 @@
             header("Location: contact-us.php");
         } else {
 
-            include 'setup_db.php';
+            $servername = "eu-cdbr-west-01.cleardb.com";
+            $db_username = "bb372c9ecfbe6e"; //xampp default
+            $db_password = "f8312940";  //xampp default
+            $database = "heroku_5b8ce60be14add9";
+
+            $conn = mysqli_connect($servername, $db_username, $db_password, $database);
 
             $name = $_POST['txtName'];
             $email = $_POST['txtEmail'];
@@ -30,8 +33,8 @@
                 $btnSubmit = "btnSubmit";
                 $_SESSION['btnSubmit'] = $btnSubmit;
                 header("Location: contact-us.php");
-
             }
         }    
     }
+
 ?>
