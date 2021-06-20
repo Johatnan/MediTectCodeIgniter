@@ -53,6 +53,8 @@ class Posts_model extends CI_Model {
             ON 
                 user_recents.id = ".$param." AND 
                 user_recents.first_recents=hospitals.hospital_name
+			ORDER BY 
+				user_recents.created_at DESC
         ");
 
         return $query->result_array();
