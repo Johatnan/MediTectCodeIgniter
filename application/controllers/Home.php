@@ -80,7 +80,7 @@ class Home extends CI_Controller {
 
             }
 
-            for ($i = 0; $i < count($recents); $i++){
+            for ($i = count($recents); $i > 0; $i--){
 
                 array_push($data['meditect_client'], $recents[$i]);
 
