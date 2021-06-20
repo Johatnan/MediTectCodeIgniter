@@ -9,14 +9,14 @@
 							if ($_SESSION['isLogin'] == true) {
 								echo '
 									<div class="codrops-links">
-										<a class="codrops-icon codrops-icon-prev" href="searchHospital.php"><span>Find nearby hospitals here</span></a>
+										<a href="searchHospital.php"><span>Find nearby hospitals here</span></a>
 									</div>
 								';
 						}
 						} else {
 							echo '
 								<div class="codrops-links">
-									<a class="codrops-icon codrops-icon-prev" href="login.php"><span>Create an account here</span></a>
+									<a href="login.php"><span>Create an account here</span></a>
 								</div>
 							';
 						}
@@ -54,16 +54,16 @@
 							if (isset($_SESSION['isLogin'])) {
 								if ($_SESSION['isLogin'] == true) {
 									echo '
-										<a class="codrops-icon codrops-icon-prev" href="searchHospital.php"><span>Health facilities</span></a>
+										<a href="searchHospital.php"><span>Health facilities</span></a>
 									';
 							}
 							} else {
 								echo '
-									<a class="codrops-icon codrops-icon-prev" href="login.php"><span>Create an account here</span></a>
+									<a href="login.php"><span>Create an account here</span></a>
 								';
 							}
 						?>
-						<a class="codrops-icon codrops-icon-drop" href="index.php"><span>Back to start</span></a>
+						<a href="index.php"><span>Back to start</span></a>
 					</div>
 
 					<div class="related">

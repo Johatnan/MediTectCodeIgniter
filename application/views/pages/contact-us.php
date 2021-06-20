@@ -56,7 +56,7 @@
                             <h3 class="title">WEBSITE</h3>
                             <p>
                                 <i class="fa fa-globe" aria-hidden="true"></i>
-                                http://www.facebook.com/meditect // heroku
+                                https://meditect.herokuapp.com/
                             </p>
                         </div>
                 </div>
@@ -96,3 +96,6 @@
         </div>		 
     </div>
 </div>
+
+</body>
+</html>
